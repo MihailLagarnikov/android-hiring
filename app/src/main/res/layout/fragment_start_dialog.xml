@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/title_start_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arial_bold"
+        android:gravity="center"
+        android:text="@string/title_start_dialog"
+        android:textColor="@color/secondary_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_start_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="@string/description_start_dialog"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:fontWeight="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_start_dialog" />
+
+    <ImageView
+        android:id="@+id/maleImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_corners"
+        android:contentDescription="@string/gender"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:src="@drawable/maleicon"
+        app:layout_constraintStart_toEndOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@+id/description_start_dialog" />
+
+    <ImageView
+        android:id="@+id/femaleImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/gender"
+        android:background="@drawable/card_corners"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:src="@drawable/femaleicon"
+        app:layout_constraintStart_toEndOf="@+id/maleImage"
+        app:layout_constraintTop_toBottomOf="@+id/description_start_dialog" />
+
+    <TextView
+        android:id="@+id/gender_title_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_bold"
+        android:gravity="start"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/maleImage"
+        app:layout_constraintStart_toStartOf="@+id/age_title_dialog"
+        app:layout_constraintTop_toTopOf="@+id/maleImage" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_age"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_spinner_gray"
+        android:dropDownSelector="@drawable/dropdown_arrow"
+        android:gravity="start"
+        android:spinnerMode="dialog"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@+id/maleImage" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_age" />
+
+    <TextView
+        android:id="@+id/age_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/arial_bold"
+        android:gravity="start"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_age"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@+id/spinner_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

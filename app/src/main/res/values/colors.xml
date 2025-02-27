@@ -4,5 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_green">#7BA151</color>
     <color name="primary_green">#9BCC34</color>
+    <color name="primary_green44">#E91E63</color>
     <color name="secondary_gray">#B2B2B3</color>
+    <color name="spinner_gray">#F2F2F2</color>
+    <color name="almost_transparent">#73FFFFFF</color>
+    <color name="spinner_divider">#0000000D</color>
+    <color name="male_selected_card_background">#DEF3FE</color>
+    <color name="male_selected_card">#3DB2FE</color>
+    <color name="female_selected_card_background">#4DFF7BAC</color>
+    <color name="female_selected_card">#FF7BAC</color>
 </resources>

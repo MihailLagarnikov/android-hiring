@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="send">Отправить</string>>
+
+    <!--Start Dialog-->
+    <string name="title_start_dialog">Привет, Username!</string>
+    <string name="description_start_dialog">Расскажи о себе.\nЭто необходимо, чтобы подбирать партнёров за столом</string>
+    <string name="gender">Пол:</string>
+    <string name="age">Возраст:</string>
 </resources>
